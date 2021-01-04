@@ -6,7 +6,7 @@ body
     font-family: Arial;
 }
 
-#page {
+.page {
     background-color: white;
     width: 700px;
     margin: auto;
@@ -40,7 +40,6 @@ ul li {
 }
 
 h1 {
-    background-color: white;
     text-align: center;
     padding: 15px;
     width: 570px;
@@ -60,10 +59,10 @@ h1 {
 #logo {
     width: 300px;
     height: auto;
+    clip-path:ellipse(49% 49%);
 }
 
 #salut {
-    background-color: white;
     text-align: center;
     padding: 15px;
     width: 270px;
