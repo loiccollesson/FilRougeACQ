@@ -37,6 +37,7 @@ ul li {
 #logo {
     height: 300px;
     width: auto;
+    clip-path:ellipse(49% 49%);
 }
 
 h1 {
