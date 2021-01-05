@@ -1,0 +1,125 @@
+/* /body{
+    background-color: #F39C12;
+} */
+
+h1{
+text-align: center;
+font-family: impact;
+
+}
+
+#conteneur{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.element{
+	margin: auto;
+
+}
+.photos img{
+	width: 180px;
+	height: 150px;
+    border-radius: 50%;
+}
+
+#passion {
+    display: flex;
+    justify-content: space-around;
+}
+
+#passion img {
+    width: 160px;
+    position: relative;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+margin-top: 50px ;
+
+}
+
+.body{
+background-color: #FFD700;
+  color: black;  
+}
+
+#lm{
+    text-align: center;
+}
+
+            #bouton{
+                text-align: center;
+            }
+            .boutonmove{
+                display: inline-block;
+                height: 34px;
+                position: relative;
+                width: 60px;
+            }
+
+            .boutonmove input {
+                display: none;
+            }
+
+            .rond {
+                background-color: rgb(128, 128, 128);
+                cursor: pointer;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                top: 0;
+                transition: .4s;
+            }
+
+            .rond:before{
+                background-color: rgb(255, 255, 255);
+                bottom: 4px;
+                content: "";
+                height: 26px;
+                left: 4px;
+                position: absolute;
+                transition: .4s;
+                width: 26px;
+            }
+
+            input:checked + .rond {
+                background-color: rgb(10, 173, 10);
+            }
+
+            input:checked + .rond:before {
+                transform: translateX(26px);
+            }
+
+            .rond.blanc {
+                border-radius: 34px;
+            }
+
+            .rond.blanc:before {
+                border-radius: 50%;
+            }
+
+
+.dark{
+    background-color:black;
+    color:#FFD700;
+}
+
+/* .photos:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+} */
+
+.effet:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#passion img{
+    height: 300px;
+    width: 210px;
+}
+
