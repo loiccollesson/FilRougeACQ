@@ -302,3 +302,61 @@ h2{
     }
 } */
 
+.darkmode{
+    background-image: url(./Ressources/blackwallv3.jpg);
+}
+
+#boutonpower{
+    text-align: center;
+    position: absolute;
+    left: 80%;
+    top: 20px;
+}
+.boutonmove{
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.boutonmove input {
+    display: none;
+}
+
+.rond {
+    background-color: rgb(128, 128, 128);
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.rond:before{
+    background-color: rgb(255, 255, 255);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked + .rond {
+    background-color: rgb(196, 21, 21);
+}
+
+input:checked + .rond:before {
+    transform: translateX(26px);
+}
+
+.rond.blanc {
+    border-radius: 34px;
+}
+
+.rond.blanc:before {
+    border-radius: 50%;
+}
